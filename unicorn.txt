@@ -1,0 +1,9 @@
+‹N“®
+bundle exec unicorn -c unicorn.rb -D
+
+’Tõ
+ps auxf | grep unicorn | grep -v grep
+
+I—¹
+kill -QUIT <master process No>
+

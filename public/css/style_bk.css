@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('font/meteocons-webfont.eot');
+    src: url('font/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/meteocons-webfont.woff') format('woff'),
+         url('font/meteocons-webfont.ttf') format('truetype'),
+         url('font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+/*
+    src: url('http://192.168.11.150/weather/css/font/meteocons-webfont.eot');
+    src: url('http://192.168.11.150/weather/css/font/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://192.168.11.150/weather/css/font/meteocons-webfont.woff') format('woff'),
+         url('http://192.168.11.150/weather/css/font/meteocons-webfont.ttf') format('truetype'),
+         url('http://192.168.11.150/weather/css/font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color:DarkSlateGray;
+	color: white;
+}
+
+
+.icon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+	font-size: 100px;
+}
+
+
+.todayicon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+	font-size: 500px;
+}
+
+
+.subicon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+}
+
+
+.icon {
+	float: left;
+}
+
+.todayicon {
+	float: left;
+}
+
+.subicon {
+	float: left;
+	height: 20px;
+}
+
+.max {
+	font-weight: bold;
+	color: red;
+	float: left;
+	height: 20px;
+	padding-right: 3px;
+}
+
+.min {
+	font-weight: bold;
+	color: skyblue;
+	height: 20px;
+}
+
+
+.period {
+	float: left;
+	margin-right: 1%;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.today {
+	font-size: 300%;
+}
+
+.todaycent {
+	height: 60px;
+	padding-right:10px; 
+}
+
+.weather {
+	font-size: 130%;
+	font-weight: bolder;
+}
+
+.t00-06 {
+	color: LemonChiffon;
+}
+
+.t06-12 {
+	color: yellow;
+}
+
+.t12-18 {
+	color: Orange;
+}
+
+.t18-24 {
+	color: Chocolate;
+}
+

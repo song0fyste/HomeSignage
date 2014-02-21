@@ -1,0 +1,175 @@
+
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('font/meteocons-webfont.eot');
+    src: url('font/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/meteocons-webfont.woff') format('woff'),
+         url('font/meteocons-webfont.ttf') format('truetype'),
+         url('font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+/*
+    src: url('http://192.168.11.150/weather/css/font/meteocons-webfont.eot');
+    src: url('http://192.168.11.150/weather/css/font/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://192.168.11.150/weather/css/font/meteocons-webfont.woff') format('woff'),
+         url('http://192.168.11.150/weather/css/font/meteocons-webfont.ttf') format('truetype'),
+         url('http://192.168.11.150/weather/css/font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+	  font-family: "iconvault";
+	  src: url("font/iconvault_forecastfont.eot");
+	  src: url("font/iconvault_forecastfont.eot?#iefix") format("embedded-opentype"),
+	       url("font/iconvault_forecastfont.woff") format("woff"),
+	       url("font/iconvault_forecastfont.ttf") format("truetype"),
+	       url("font/iconvault_forecastfont.svg#iconvault") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+*/
+
+body {
+	background-color:DarkSlateGray;
+	color: white;
+}
+
+
+/* 天気アイコン用 */
+
+.icon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+	font-size: 100px;
+}
+
+
+.todayicon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+	font-size: 300px;
+}
+
+
+.subicon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+}
+
+
+/* 天気アイコンここまで */
+
+.today dd {
+	height: 60px;
+}
+
+.tomorrow dd {
+	height: 40px;
+}
+
+
+/*
+.icon {
+	float: left;
+}
+
+.todayicon {
+	float: left;
+}
+*/
+
+.subicon {
+	float: left;
+	height: 20px;
+}
+
+.max {
+	font-weight: bold;
+	color: red;
+	float: left;
+	height: 20px;
+	padding-right: 3px;
+}
+
+.min {
+	font-weight: bold;
+	color: skyblue;
+	height: 20px;
+}
+
+
+.period {
+	float: left;
+	margin-right: 1%;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.today {
+	font-size: 300%;
+	width: 700px;
+	float: left;
+}
+
+.tomorrow {
+	font-size: 200%;
+	margin-left: 100px;
+}
+
+
+/*.todaycent {
+	height: 60px;
+	padding-right:10px; 
+}
+*/
+
+.weather {
+	font-size: 130%;
+	font-weight: bolder;
+	/*float: left;*/
+}
+
+.t00-06 {
+	color: LemonChiffon;
+}
+
+.t06-12 {
+	color: yellow;
+}
+
+.t12-18 {
+	color: Orange;
+}
+
+.t18-24 {
+	color: Chocolate;
+}
+
+
+.fire {
+	color: red;
+}
+
+.nofire {
+	color: lightblue;
+}
+
+.sigen {
+	color: yellow;
+}
+
+.other {
+	color: white;
+}
+
+
+h1 {
+	font-size: 100px;
+}
+
+h2 {
+	font-size: 75px;
+}
+

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>HomeWeather</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="refresh" content="5;URL=../trash">
+    <script src="js/weather.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <header role="banner">
+    </header>
+    <nav></nav>
+    <div role="main">
+    </div>
+    <section class="today">
+        <dl>
+            <dt class='date'><%= @today %></dt>
+            <!-- <dd class='weather'>くもり</dd> -->
+            <dd class='weather'><%= @tweather %></dd>
+        </dl>
+        <div class='todayicon' data-icon=<%= @tpic %>></div>
+        <dl>
+            <dd class='subicon' data-icon="'"></dd>
+            <dd class='cent max'><%= @tmax %></dd>
+            <dd class='cent min'><%= @tmin %></dd>
+            <dd class='subicon' data-icon='8'></dd>
+            <dd class='period t00-06'><%= @t00 %>％</dd>
+            <dd class='period t06-12'><%= @t06 %>％</dd>
+            <dd class='period t12-18'><%= @t12 %>％</dd>
+            <dd class='period t18-24'><%= @t18 %>％</dd>
+        </dl>
+    </section>
+    
+    <section class="tomorrow">
+        <dl>
+            <dt class='date'><%= @nextday %></dt>
+            <dd class='weather'><%= @nweather %></dd>
+        </dl>
+        <div class='icon' data-icon=<%= @npic %>></div>
+        <dl>
+            <dd class='subicon' data-icon="'"></dd>
+            <dd class='cent max'><%= @nmax %></dd>
+            <dd class='cent min'><%= @nmin %></dd>
+            <dd class='subicon' data-icon='8'></dd>
+            <dd class='period t00-06'><%= @n00 %>％</dd>
+            <dd class='period t06-12'><%= @n06 %>％</dd>
+            <dd class='period t12-18'><%= @n12 %>％</dd>
+            <dd class='period t18-24'><%= @n18 %>％</dd>
+        </dl>
+    </section>
+
+<!--
+    <div class='icon' data-icon='J'></div>
+    <div class='date'>2013/11/06</div>
+    <div class='weather'>晴れ時々くもり</div>
+    <div class='subicon' data-icon="'"></div>
+    <div class='cent max'>19</div>
+    <div class='cent min'>13</div>
+    <div class='subicon' data-icon='8'></div>
+    <div class='period t00-06'>20％</div>
+    <div class='period t06-12'>20％</div>
+    <div class='period t12-18'>20％</div>
+    <div class='period t18-24'>20％</div>
+-->
+
+    <footer role="contentinfo">
+    </footer>
+</body>
+</html>

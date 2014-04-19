@@ -6,34 +6,15 @@
          url('font/meteocons-webfont.woff') format('woff'),
          url('font/meteocons-webfont.ttf') format('truetype'),
          url('font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
-/*
-    src: url('http://192.168.11.150/weather/css/font/meteocons-webfont.eot');
-    src: url('http://192.168.11.150/weather/css/font/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://192.168.11.150/weather/css/font/meteocons-webfont.woff') format('woff'),
-         url('http://192.168.11.150/weather/css/font/meteocons-webfont.ttf') format('truetype'),
-         url('http://192.168.11.150/weather/css/font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
-*/
     font-weight: normal;
     font-style: normal;
 }
 
-/*
-@font-face {
-	  font-family: "iconvault";
-	  src: url("font/iconvault_forecastfont.eot");
-	  src: url("font/iconvault_forecastfont.eot?#iefix") format("embedded-opentype"),
-	       url("font/iconvault_forecastfont.woff") format("woff"),
-	       url("font/iconvault_forecastfont.ttf") format("truetype"),
-	       url("font/iconvault_forecastfont.svg#iconvault") format("svg");
-	  font-weight: normal;
-	  font-style: normal;
-	}
-
-*/
 
 body {
 	background-color:DarkSlateGray;
 	color: white;
+	/*border: #ccc 1px solid;*/
 }
 
 
@@ -42,7 +23,8 @@ body {
 .icon:before {
 	font-family: 'MeteoconsRegular';
 	content: attr(data-icon);
-	font-size: 100px;
+	font-size: 300px;
+	/*border: #ccc 1px solid;*/
 }
 
 
@@ -50,39 +32,46 @@ body {
 	font-family: 'MeteoconsRegular';
 	content: attr(data-icon);
 	font-size: 300px;
+	/*border: #ccc 1px solid;*/
 }
 
 
 .subicon:before {
 	font-family: 'MeteoconsRegular';
 	content: attr(data-icon);
+	/*border: #ccc 1px solid;*/
+
 }
 
 
 /* 天気アイコンここまで */
 
+dl {
+	padding: 0;
+	margin: 0;
+}
+
+dd {
+	padding: 0;
+	margin: 0;
+}
+
 .today dd {
 	height: 60px;
+	/*border: #ccc 1px solid;*/
 }
 
 .tomorrow dd {
-	height: 40px;
+	height: 60px;
+	/*border: #ccc 1px solid;*/
 }
 
-
-/*
-.icon {
-	float: left;
-}
-
-.todayicon {
-	float: left;
-}
-*/
 
 .subicon {
 	float: left;
 	height: 20px;
+	width: 80px;
+	/*border: #ccc 1px solid;*/
 }
 
 .max {
@@ -90,61 +79,86 @@ body {
 	color: red;
 	float: left;
 	height: 20px;
-	padding-right: 3px;
+	width: 80px;
+	margin-left: 5px;
+	/*padding-right: 3px;*/
+	/*margin-right: 10px;*/
+	/*border: #ccc 1px solid;*/
 }
 
 .min {
 	font-weight: bold;
 	color: skyblue;
 	height: 20px;
+	/*border: #ccc 1px solid;*/
 }
 
 
 .period {
-	float: left;
-	margin-right: 1%;
+	/*float: left;*/
+	/*margin-right: 1%;*/
 	margin-top: 5px;
 	font-weight: bold;
+	/*border: #ccc 1px solid;*/
 }
 
 .today {
 	font-size: 300%;
 	width: 700px;
 	float: left;
+	/*border: #ccc 1px solid;*/
+	/*margin: 10px;*/
+	height: 570px;
 }
 
 .tomorrow {
-	font-size: 200%;
+/*	font-size: 200%;
 	margin-left: 100px;
+*/	
+	font-size: 300%;
+	width: 700px;
+	float: left;
+	/*border: #ccc 1px solid;*/
+	/*margin: 10px;*/
+	height: 570px;
 }
-
-
-/*.todaycent {
-	height: 60px;
-	padding-right:10px; 
-}
-*/
 
 .weather {
 	font-size: 130%;
 	font-weight: bolder;
 	/*float: left;*/
+	/*border: #ccc 1px solid;*/
+	margin: 10px;
+
 }
 
 .t00-06 {
+	width: 130px;
+	margin-left: 5px;
 	color: LemonChiffon;
+	/*border: #ccc 1px solid;*/
+	float: left;
 }
 
 .t06-12 {
+	width: 130px;
 	color: yellow;
+	/*border: #ccc 1px solid;*/
+	float: left;
 }
 
 .t12-18 {
+	width: 130px;
 	color: Orange;
+	/*border: #ccc 1px solid;*/
+	float: left;
 }
 
 .t18-24 {
+	width: 130px;
 	color: Chocolate;
+	/*border: #ccc 1px solid;*/
+	float: left;
 }
 
 
@@ -167,9 +181,47 @@ body {
 
 h1 {
 	font-size: 100px;
+	float: left;
+	padding: 0 20px;
+	margin: 10px 0;
+	/*border: #ccc 1px solid;*/
 }
 
 h2 {
 	font-size: 75px;
 }
 
+.date {
+	/*border: #ccc 1px solid;*/
+}
+
+.time {
+
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*ティッカー用*/
+.ticker {
+	margin: 0;
+	padding: 0 20px 20px 20px;
+	width: 1200px;
+	text-align: left;
+	/*border: #ccc 1px solid;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.ticker ul {
+	width: 100%;
+	position: relative;
+}
+
+.ticker ul li {
+	width: 100%;
+	display: none;
+	font-size: 75px;
+}

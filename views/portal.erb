@@ -11,7 +11,7 @@
     <script src="js/Main.js" type="text/javascript"></script>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <!-- <meta http-equiv="refresh" content="5;URL=../weather"> -->
+    <meta http-equiv="refresh" content="300;URL=../portal">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -24,49 +24,49 @@
     </div>
 
     <section class="watch">
-        <h1 class="date"><%= @today %></h1>
-        <h1 class="time"><%= @time %></h1>
+        <h1 class="date border"><%= @today %></h1>
+        <h1 class="time border"><%= @time %></h1>
     </section>
 
-    <section class="today clear">
+    <section class="today clear border">
         <dl>
             <!-- <dt class='date'><%= @today %></dt> -->
-            <dt class='date'>今日</dt>
-            <dd class='weather'><%= @tweather %></dd>
+            <dt class='date border'>今日</dt>
+            <dd class='weather border'><%= @tweather %></dd>
         </dl>
-        <div class='todayicon' data-icon=<%= @tpic %>></div>
-        <dl class='cent'>
+        <div class='todayicon border' data-icon=<%= @tpic %>></div>
+        <dl class='cent border'>
             <dd class='subicon' data-icon="'"></dd>
-            <dd class='max'><%= @tmax %></dd>
-            <dd class='min'><%= @tmin %></dd>
+            <dd class='max border'><%= @tmax %></dd>
+            <dd class='min border'><%= @tmin %></dd>
         </dl>
-        <dl class='period'>
-            <dd class='subicon' data-icon='8'></dd>
-            <dd class='t00-06'><%= @t00 %>％</dd>
-            <dd class='t06-12'><%= @t06 %>％</dd>
-            <dd class='t12-18'><%= @t12 %>％</dd>
-            <dd class='t18-24'><%= @t18 %>％</dd>
+        <dl class='period border'>
+            <dd class='subicon border' data-icon='8'></dd>
+            <dd class='t00-06 border'><%= @t00 %>％</dd>
+            <dd class='t06-12 border'><%= @t06 %>％</dd>
+            <dd class='t12-18 border'><%= @t12 %>％</dd>
+            <dd class='t18-24 border'><%= @t18 %>％</dd>
         </dl>
     </section>
     
-    <section class="tomorrow">
+    <section class="tomorrow border">
         <dl>
             <!-- <dt class='date'><%= @nextday %></dt> -->
-            <dt class='date'>明日</dt>
-            <dd class='weather'><%= @nweather %></dd>
+            <dt class='date border'>明日</dt>
+            <dd class='weather border'><%= @nweather %></dd>
         </dl>
-        <div class='icon' data-icon=<%= @npic %>></div>
-        <dl class='cent'>
-            <dd class='subicon' data-icon="'"></dd>
-            <dd class='cent max'><%= @nmax %></dd>
-            <dd class='cent min'><%= @nmin %></dd>
+        <div class='icon border' data-icon=<%= @npic %>></div>
+        <dl class='cent border'>
+            <dd class='subicon border' data-icon="'"></dd>
+            <dd class='max border'><%= @nmax %></dd>
+            <dd class='min border'><%= @nmin %></dd>
         </dl>
-        <dl class='period'>
-            <dd class='subicon' data-icon='8'></dd>
-            <dd class='t00-06'><%= @n00 %>％</dd>
-            <dd class='t06-12'><%= @n06 %>％</dd>
-            <dd class='t12-18'><%= @n12 %>％</dd>
-            <dd class='t18-24'><%= @n18 %>％</dd>
+        <dl class='period border'>
+            <dd class='subicon border' data-icon='8'></dd>
+            <dd class='t00-06 border'><%= @n00 %>％</dd>
+            <dd class='t06-12 border'><%= @n06 %>％</dd>
+            <dd class='t12-18 border'><%= @n12 %>％</dd>
+            <dd class='t18-24 border'><%= @n18 %>％</dd>
         </dl>
     </section>
 
@@ -75,7 +75,7 @@
     
     <h2 id="third" class="<%= @tommorowTrashCls %>">明日は<%= @tommorowTrash %></h2>
  -->
-    <div class="ticker" rel="roll">
+    <div class="ticker border" rel="roll">
     <ul>
         <li id="next" class="<%= @todayTrashCls %>">今日は<%= @todayTrash %></li>
         <li id="third" class="<%= @tommorowTrashCls %>">明日は<%= @tommorowTrash %></li>
